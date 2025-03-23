@@ -15,7 +15,8 @@ export const SignIn = () => {
                     classNames(
                       "p-4",
                       "rounded-md",
-                      "hover:bg-[#d8dfe9cc] hover:text-black"
+                      "hover:underline",
+                      "cursor-pointer"
                     )
                 }
             >
@@ -40,7 +41,8 @@ export const SignOut = () => {
                     classNames(
                       "p-4",
                       "rounded-md",
-                      "hover:bg-[#d8dfe9cc] hover:text-black"
+                      "hover:underline",
+                      "cursor-pointer"
                     )
                 }
             >
