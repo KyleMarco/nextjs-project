@@ -5,9 +5,11 @@ export default function LinkButton({ label, href }: { label: string, href: strin
     return (
         <Link href={href} className={
             classNames(
-              "flex items-center justify-center w-[150px] h-[50px] mb-2 text-center",
-              "border-4 border-gray-100 m-4 rounded-md",
-              "hover:bg-gray-100 hover:text-black"
+              "block",
+              "w-[150px] p-4",
+              "lg:text-center",
+              "rounded-md",
+              "hover:bg-[#d8dfe9cc] hover:text-black"
             )
           }> {label} </Link>
     )

@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import { signIn, signOut } from "../../../../auth";
 
 export const SignIn = () => {
@@ -8,7 +9,18 @@ export const SignIn = () => {
                 await signIn("google");
             }}
         >
-            <button type="submit">Signin with Google</button>
+            <button 
+                type="submit"
+                className={
+                    classNames(
+                      "p-4",
+                      "rounded-md",
+                      "hover:bg-[#d8dfe9cc] hover:text-black"
+                    )
+                }
+            >
+                Signin with Google
+            </button>
         </form>
     )
 };  
@@ -22,7 +34,18 @@ export const SignOut = () => {
                 }
             }
         >
-            <button type="submit">Sign Out</button>
+            <button 
+                type="submit"
+                className={
+                    classNames(
+                      "p-4",
+                      "rounded-md",
+                      "hover:bg-[#d8dfe9cc] hover:text-black"
+                    )
+                }
+            >
+                Sign Out
+            </button>
         </form>
     )
 };  

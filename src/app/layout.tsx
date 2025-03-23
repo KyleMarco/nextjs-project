@@ -22,7 +22,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className="bg-blue-100">
+      <body>
         <ReduxProvider>
           {children}
         </ReduxProvider>
