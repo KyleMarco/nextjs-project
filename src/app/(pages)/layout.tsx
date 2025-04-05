@@ -12,8 +12,6 @@ import Link from "next/link";
 export default async function Layout({ children }: { children: React.ReactNode }) {
   const session = await auth();
 
-  console.log(' session ', session);
-
   return (
     <div>
       <section className="flex sticky top-0">
@@ -45,6 +43,17 @@ export default async function Layout({ children }: { children: React.ReactNode }
                   }> Home </Link>
                 </MenuItem>
                 <MenuItem>
+                  <Link href="/todo" className={
+                    classNames(
+                      "block",
+                      "p-4",
+                      "lg:text-center",
+                      "rounded-md",
+                      "hover:underline",
+                    )
+                  }> ToDO List </Link>
+                </MenuItem>
+                <MenuItem>
                   <Link href="/cart" className={
                     classNames(
                       "block",
@@ -72,6 +81,7 @@ export default async function Layout({ children }: { children: React.ReactNode }
         </div>
         <div className="hidden lg:flex grow items-center gap-2">
           <LinkButton label="Cart" href="/cart" />
+          <LinkButton label="ToDo List" href="/todo" />
           <LinkButton label="About Me" href="/about" />
         </div>
         <div className="flex lg:hidden grow items-center justify-end gap-2 p-6 ">

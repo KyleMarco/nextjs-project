@@ -1,12 +1,13 @@
 "use client";
 export default function Home() {
   return (
-    <div className="flex flex-col w-auto h-auto mt-40 p-10 gap-y-4">
-      <div className="flex flex-col items-center gap-y-2">
-        <p> Kyle Marco Cabiling </p>
-        <p className="text-4xl"> ReactJS Developer </p>
+    <section className="flex px-10 gap-y-4">
+      <div className="flex flex-col gap-y-2">
+        
+        <p className="text-lg">Hi, I am</p>
+        <h1 className="text-4xl font-extrabold">Kyle Marco Cabiling</h1>
       </div>
-      <div className="flex flex-col items-start gap-y-4">
+      {/* <div className="flex flex-col items-start gap-y-4">
         <div className="text-3xl"> <p className="text-2xl">Summary</p> Professional Software Developer with more than 7 years of experience in the IT Industry. I am involved in web development, program testing, and team management. </div>
         <div>
           <p className="text-2xl"><b>Technical Stacks:</b></p>
@@ -76,7 +77,7 @@ export default function Home() {
             - Build a login page using auth0 and tailwind CSS https://auth.felix.net/
           </div>
         </div>
-      </div>
-    </div>
+      </div> */}
+    </section>
   );
 }
