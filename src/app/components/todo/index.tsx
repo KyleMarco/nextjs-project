@@ -14,7 +14,7 @@ const Todo = () => {
     const [rows, setRows] = useState<ITodoAttributes[]>([]);
 
     const handleDelete = useCallback(async(id: string) => {
-        await fetch(`http://localhost:3000/api/todos`, 
+        await fetch(`/api/todos`, 
             { 
                 method: 'DELETE',
                 headers: {
@@ -31,7 +31,7 @@ const Todo = () => {
 
     useEffect(() => {
         const fetchRows = async () => {
-            const { todos: { rows: fetchRows } } = await fetch('http://localhost:3000/api/todos', { method: 'GET' }).then((resp) => resp.json());
+            const { todos: { rows: fetchRows } } = await fetch('/api/todos', { method: 'GET' }).then((resp) => resp.json());
             setRows(fetchRows);
         };
 

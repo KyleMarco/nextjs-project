@@ -27,7 +27,7 @@ const InsertTodo = () => {
         const uuid = uuidv4();
         const session = await getSession();
 
-        await fetch('http://localhost:3000/api/todos', { 
+        await fetch('/api/todos', { 
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
